@@ -1,34 +1,56 @@
 # CORE  HTML/CSS
 
-This is the official Girl Develop It Core HTML/CSS curriculum. It was developed through the contributions of Pamela Fox, Alexis Goldstein, Erin M. Kidwell, Izzy Johnston, and Jen Myers.
+This is Girl Develop It Detroit's Intro to HTML/CSS curriculum. It has been continually modified & improved by Cara Jo Miller, Nicole Rodriguez, Laura Eagin, and Leeann Drees. 
 
-The course is meant to be taught in 4 two-hour sections. Each of the slides and practice files are customizable according to the needs of a given class or audience.
+This curriculum is a modification of the original Girl Develop It Core HTML/CSS curriculum, which was created through the contributions of Pamela Fox, Alexis Goldstein, Erin M. Kidwell, Izzy Johnston, and Jen Myers.
+
+The course is meant to be taught in 2 four-hour sections. 
 
 ## Classes
 
-### Class 1
+### Session 1 (session1.html)
 
-Introduction to HTML. What is it? Why does it matter?
-You will go through the basic history of HTML, including how it interacts with the browser and why that matters.
-Then you will discuss the layout of an HTML page, including html, body, head and nesting.
-Finally, you will go through many of the basic HTML elements.
-Students will begin to make a personal portfolio page with HTML elements and no styling.
+	- What is HTML?
+	- Anatomy of a Website
+	- Folder Structure
+	- Anatomy of an HTML Element
+	- Doctype + Head & Body Tags
+	- Nesting
+	- Elements: Paragraphs, Headings, Formatted Text, Links, Images, Line Breaks, Ordered & Unordered Lists, Tables
+	- Comments
 
-### Class 2
-Introduction to CSS. Colors? Styles? What? It's all true. And you thought we are going to make you live your life in black and white.
+	- What is CSS? 
+	- CSS Syntax
+	- Selectors: Elements, Child
+	- Properties: Color, Background-color, Font-family, Font-size
+	- Where to find fonts & colors
+	- Linking CSS to HTML
+	- Cascading
 
-You will go through most of the css styles, including font changes, layout, size, and color. You will show how to connect them to html selectors. The CSS file will be an external file.
+During Session 1, students create a simple HTML page and add minimal styling toward the end.
 
-Students will add CSS styling to their portfolio.
+Homework assignment: viewing source code & inspecting elements on favorite websites, + setting up for Session 2.
 
-### Class 3
 
-Introduction to divs, spans, ids and classes. You didn't think we would just leave you with paragraphs and lists did you? No, my friends. We are going to dive into these super valuable container elements. Then learn how to have id and class selectors in our CSS. Who wants all paragraphs to look the same.
-Students will start customizing their portfolio with all sorts of goodies. 
+### Session 2 (session2.html)
 
-### Class 4
+	- Review
+	- HTML5 Structural Elements: header, main, aside, footer
+	- Inline vs. Block Elements
+	- Box Model
+	- CSS Properties: width, height, 
+	- Divs & Spans
+	- IDs & Classes
+	- Positioning: static, relative, absolute, & fixed
+	- Floats & clearing
+	- Z-index
+	- Psuedo-classes
+	- How does a website work? (Domain & hosting)
+	- What's next?
 
-Box model? Floating? Columns? What is this sorcery? You've brought people through the core of html and css. Now give them the next steps to be pros. Students will add columns, footers and headers to their portfolios.
+During Session 2, students create a new HTML page with more advanced styling & a simple layout.
+
+
 
 ## Theme customization
 
