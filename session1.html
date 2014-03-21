@@ -49,21 +49,12 @@
           <br/><br/><small><span style="yellow">Bonus:</span> Find a few images/photos to use later when we start coding.</small>   
         </section>
        
-        <section>
-          <h3>Sublime Text 2: Oper User Settings</h3>
-          <img src = "images/sublime-user-settings.png" style="border: none; box-shadow: none;">
-        </section>
+        
 
-        <section>
-          <h3>Replace existing text with this</h3>
-          <img src = "images/sublime-replace-user-settings-with-this.png" style="border: none; box-shadow: none;">
-          <h4>After typing this, save and close the tab. You're ready to use Sublime!</h4>
-        </section>
-
-        <section>
+        <!--<section>
           <h3>Optional: Select new color scheme</h3>
           <img src = "images/sublime-change-color-scheme.png" style="border: none; box-shadow: none;">
-        </section>
+        </section>-->
 
         <section>
           <img src = "images/gdi_logo_badge.png" style="border: none; box-shadow: none;">
@@ -125,8 +116,7 @@
         <section>
           <h3>Now it's all about you!</h3>
           <div class = "left-align">
-          <p class = "blue">Meet your neighbor:</p>
-          <p>Find a partner near you, ask them a few basic questions, and then we'll go around and introduce our partners.</p>
+          <p>Let's meet each other!</p>
           <ul>
             <li>What's your name?</li>
             <li>Favorite thing about your job/studies?</li>
@@ -139,6 +129,11 @@
           <h3>Overview</h3>
           <ul>
             <li class="left-align">What is HTML?</li>
+            <li class="left-align">Anatomy of a Website</li>
+            <li class="left-align">HTML Elements</li>
+            <li class="left-align">What is CSS?</li>
+            <li class="left-align">Connecting CSS to HTML</li>
+            <li class="left-align">Using the Inspector</li>
           </ul>
         </section>
         
@@ -200,7 +195,7 @@
         
         <section>
           <h3>Anatomy of a website</h3>
-          <p>A website is a way to share your content with the world, using HTML and CSS to give structure to that content &amp; make it look good.</p>
+          <p>A website is a way to share your content with the world, using HTML to give structure to that content &amp; CSS to make it look good.</p>
         </section>
          
           <!-- Roles of HTML v CSS -->
@@ -220,6 +215,7 @@
           <h3>What we'll be building today</h3>
           <div class="left left-align" style="width: 45%;">
             <p>Today we will be learning how to code a site from scratch using paragraphs, headings, links, images, and lists.</p>
+            <p>We'll add a tiny bit of CSS for colors &amp; fonts, but we're saving CSS layouts for tomorrow.</p> 
           </div>
           <div class="right" style="width: 45%;">
             <img src="images/making-this-today.png"/>
@@ -262,6 +258,38 @@ float: left;"/><strong>Sublime Text - Mac or Windows</strong></div>
             <img src="images/folderstructure2.jpg" style="border:none; box-shadow: none;"/>
           </div>
         </section>
+
+        <section>
+          <h3>Create Your Folder</h3>
+          <ul>
+            <li>Somewhere easy to remember (perhaps on your desktop?), save a new folder called '<span class="blue">html-site</span>' &mdash; no spaces, no caps!</li>
+            <li>Open Sublime Text &amp; create 2 new files.</li>
+            <li>Save one as <span class="green">index.html</span>.</li>
+            <li>Save the other as <span class="green">styles.css</span>.</li>
+            <li>Make sure both files are saved in your <span class="blue">html-site</span> folder!</li>
+          </ul>
+        </section>
+
+        <section>
+          <h3>Setting up Sublime Text: Open User Settings</h3>
+          <img src = "images/sublime-user-settings.png" style="border: none; box-shadow: none;">
+        </section>
+
+        <section>
+          <h3>Replace existing text with this:</h3>
+          <pre>
+          	<code>
+{
+"auto_complete": false,
+"tab_completion": false,
+"detect_indentation": false,
+"match_tags": false,
+"auto_match_enabled": false
+}
+          	</code>
+          </pre>
+          <h4>After typing this, save and close the tab. You're ready to use Sublime!</h4>
+        </section>
                 
         <!-- HTML element-->
         <section>
@@ -279,7 +307,7 @@ float: left;"/><strong>Sublime Text - Mac or Windows</strong></div>
             <ul>
               <li>Marks the beginning &amp; end of an element</li>
                <li>Opening tag and Closing Tag
-               <li>Tags contain characters that indicate the tags purpose</li>
+               <li>Tags contain characters that indicate the tag's purpose</li>
              </ul>
 <pre><code class ="html">&lt;tagname>Stuff in the middle&lt;/tagname></code></pre>
 <pre><code class ="html">&lt;p> This is a sample paragraph.&lt;/p></code></pre>
@@ -333,16 +361,19 @@ float: left;"/><strong>Sublime Text - Mac or Windows</strong></div>
       <section>
           <h3>Concrete example</h3>
           <ul>
-            <li class ="fragment" ><p style = "font-size: 80%">A paragraph is your content</p></li>
-            <li class = "fragment"><p style = "font-size: 80%">Putting your content into an HTML tag to make it look like a paragraph is Structure</p>
+            <li class ="fragment" >A paragraph is your content</li>
+            <li class = "fragment">Putting your content into an HTML tag to make it look like a paragraph is Structure
               <pre><code class ="html">
                 &lt;p>A paragraph is your content&lt;/p>
               </code></pre>
           </li>
           <li class = "fragment">
-            <div style = "font-size: 80%">Making the font of your paragraph blue and 18pt is presentation</div>
-            <p class ="blue" style="padding-top: 20px;
-text-align: center;">A paragraph is your content</p>
+            To add the class of "blue," we'd put the attribute &amp; value in the opening &lt;p> tag:
+              <pre>
+                <code class="html">
+                  &lt;p class="blue">A paragraph is your content&lt;/p>
+                </code>
+              </pre>
           </li>
         </section>
 
@@ -409,6 +440,7 @@ text-align: center;">A paragraph is your content</p>
         	<p class="blue">Let's get our web page set up with a:</p> 
           <ul>
             <li>Doctype</li> 
+            <li>HTML tag</li>
             <li>Head</li>
             <li>Title</li>
             <li>Body</li>
@@ -594,16 +626,25 @@ text-align: center;">A paragraph is your content</p>
 			<h3>Let's Develop it!</h3>
 			<p class="left-align">Let's add some content to our site!</p>
 			<ul>
-      <li class="left-align">Add one of each level of heading (H1-H6) with 1-2 short paragraphs of text below each heading. </li>
-        <ul>
+        <li class="lef-align">Add some short paragraphs to the <span class="blue">&lt;body></span> of your site.
+          <ul>
           <li>Don't want to write a bunch of paragraphs off the top of your head? Grab some example text from a generator on the web.  Some of our favorites:
             <ul>
               <li><a href="http://www.lipsum.com/" target="_blank">Lorem Ipsum</a></li>
               <li><a href="http://www.cupcakeipsum.com/" target="_blank">Cupcake Ipsum</a></li>
               <li><a href="http://www.catipsum.com/" target="_blank">Cat Ipsum</a></li>
             </ul>
-          </ul>
-			<li class="left-align">Italicize and bold some text within a few paragraphs.</li>
+        </ul></li>
+        <li class="fragment">View in browser!</li>
+      </ul>
+      </section>
+
+      <section>
+        <h3>Take it Up a Level!</h3>
+        <ul> 
+          <li class="left-align">Add a page title in an H1</li>
+      <li class="left-align">Add one of each other level of heading (H2-H6) in between your paragraphs. </li>
+          <li class="left-align">Italicize and bold some text within a few paragraphs.</li>
 			</ul>
 		</section>
 
@@ -760,7 +801,7 @@ text-align: center;">A paragraph is your content</p>
 
         <!-- relative & absolute links -->
         <section>
-          <h3>Relative vs. Absolute paths for links & images</h3>
+          <h3>Relative vs. Absolute paths for links &amp; images</h3>
           <ul>
               <li><strong class="blue">Relative</strong> paths change depending upon the page the link is on.
                   <ul style="font-size: 70%;  margin-top: 15px;">
@@ -1021,7 +1062,7 @@ text-align: center;">A paragraph is your content</p>
         	<p><small>Comments can be used to organize your code into sections so you (or someone else) can easily understand your code. It can also be used to 'comment out' large chunks of code to hide it from the browser.</small></p>
         	<pre><code>
 &lt;!-- Beginning of header -->
-   &lt;div id="header">Header Content &lt;/div>
+   &lt;header>Header Content &lt;/header>
 &lt;!-- End of header -->
 
 &lt;!--   
@@ -1182,8 +1223,7 @@ text-align: center;">A paragraph is your content</p>
             &lt;link rel="stylesheet" type="text/css" href="styles.css" />
           </code>
         </pre>
-            <li>Create a new .css file</li>
-            <li>Make sure it is named "styles.css" and saved in the same folder as your HTML.</li>
+            <li>Make sure you have a <span class="green">styles.css</span> document saved in your <span class="blue">html-site</span> folder!</li>
           </ul>
         </section>
 
@@ -1495,9 +1535,32 @@ p em {
           </pre>
           </ul>
         </section>
+<!-- Comments -->
+<section>
+  <h3>CSS Comments</h3>
+  <p>Just like in HTML, we can use CSS comments to organize or "comment out" our code.</p>
+  <p><span class="pink">Example:</span></p>
+  <pre>
+    <code class="css">
+      /* Navigation */
+      nav ul li {
+        background-color: red;
+      }
 
+      /* Links */
+      a {
+        color: orange;
+      }
+
+      /*ol li a {
+        color: blue;
+      }*/
+
+    </code>
+  </pre>
+  </section>
         
-      
+    
         <!-- Connecting HTML to CSS-->
         <section>
           <h3>Connecting CSS to HTML</h3>
@@ -1511,7 +1574,7 @@ p em {
         <section>
           <h3>Connecting CSS to HTML: Inline</h3>
 <pre><code class = "html">
-  &lt;p style="color:red">Some text.&lt;/p>
+  &lt;p style="color:red;">Some text.&lt;/p>
 </code></pre>
           <p>Uses the HTML attribute style.</p>
           <p>Difficult to use in large projects</p>
@@ -1699,7 +1762,7 @@ p {
           <img src="images/questions_cat.jpg" alt="Confused? Let us help!" />
           <p>
             <a href="mailto:leeann.drees@gmail.com">leeann.drees@gmail.com</a> Twitter: @leeanndrees</p>
-            <p><a href="mailto:lauraeagin@gmail.com">lauraeagin@gmail.com</a> Twitter: @choolaura</p>
+            <p><a href="mailto:detroit@girldevelopit.com">detroit@girldevelopit.com</a> Twitter: @gdiDet</p>
         </section>
       
 			</div>

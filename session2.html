@@ -95,7 +95,7 @@
         	<h3>What we'll be making today</h3>
         		<p>Today we will be making a site from scratch using HTML5 elements to create a header, footer, sidebar and a content area.</p>
             <p>Then we'll add CSS styles to make it pretty*!</p>
-        		<img src="images/mockup.jpg">
+        		<img src="images/making-this-today-2.png" width="500px">
             <div style="clear:both;"><small>* prettiness not guaranteed</small></div>
         </section>
 
@@ -105,7 +105,8 @@
           <div class="left" style="width: 45%;">
           <p class="left-align"><strong>Do you have your folder set up yet?</strong></p><br />
           <ul>
-            <li>Name it html-site2</li>
+            <li>Name it <span class="blue">html-site2</span></li>
+            <li>Create new <span class="green">index.html</span> and <span class="green">styles.css</span> files.
             <li>Create an images folder <small>(lowercase)</small></li>
             <li>Drop your profile picture file into the images folder.</li>
           </ul>
@@ -155,7 +156,6 @@
               <li>Document can have multiple header elements</li>
               <li>E.g. One for the page, one for each section</li>
             </ul>
-            ADD EXAMPLE IMAGE
           </section> 
 
 
@@ -165,7 +165,6 @@
           <ul>
             <li>Use once per page to mark where main content begins</li>
             <li>Helpful for screen readers/assistive technology, content syndication, and mobile browsers</li>
-            ADD EXAMPLE IMAGE
         </section>
 
 
@@ -186,7 +185,6 @@
             </ul>
 
             <aside class="pullquote"><p><strong>Ask yourself:</strong><br/>Can the content within the aside can be removed without reducing the meaning of the main content?</p></aside>
-            ADD EXAMPLE IMAGE
           </section>
 
         <!-- Footer -->
@@ -198,7 +196,6 @@
               <li>Document can have multiple footer elements</li>
               <li>E.g. One for the page, one for each section</li>
             </ul>
-            ADD EXAMPLE IMAGE
           </section>
          
          <!-- <section>
@@ -347,7 +344,14 @@
   <!-- Box model-->
         <section>
           <h3>Box Model</h3>
-          <img src ="images/box-model.png"/>
+          <div style="width:30%; float:left;">
+            <p style="text-align:left; font-size:80%;">The CSS box model is essentially a box that wraps around HTML elements, and it consists of: margins, borders, padding, and the actual content.</p> 
+            <p style="text-align:left; font-size:80%;">The box model allows us to place a border around elements and space elements in relation to other elements.</p>
+            <small>Definition from <a href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=1&cad=rja&uact=8&ved=0CCgQhi0wAA&url=http%3A%2F%2Fwww.w3schools.com%2Fcss%2Fcss_boxmodel.asp&ei=eEsrU6_mCcuuqQGmt4HgCg&usg=AFQjCNEDIKDFEnu59p1akFM5Hk9scACuKQ&sig2=xCrX7kFEUSukjWNosFs62g&bvm=bv.62922401,d.aWM">w3schools</a></small>
+          </div>
+
+          <div style="width:65%; float:right;"><img src ="images/box-model.png" style="border:none;"/>
+          </div>
         </section>
 
         <section>
@@ -666,21 +670,20 @@
         
         <section>
           <h3>Grouping elements with div, cont.</h3>
-            <pre><code class = "html">
+            <pre><code class ="html">
+            &lt;div class="align-right">
+            &lt;p>Lorem ipsum dolor sit amet, consectetur adipisicing elit&lt;/p>
+            &lt;p>Sed do eiusmod tempor incididunt ut labore et dolore.&lt;/p> 
+            &lt;/div>
+            &lt;p>Magna aliqua. Ut enim ad minim veniam.&lt;/p> 
+            &lt;p>Quis nostrud exercitation ullamco.&lt;/a>
+            </code></pre>
+            <pre><code class = "css">
             .align-right{
               text-align:right;
               color: purple; 
               font-weight: bold;
             }
-            </code></pre>
-
-            <pre><code class ="html">
-            &lt;div class="align-right">
-              &lt;p>Lorem ipsum dolor sit amet, consectetur adipisicing elit&lt;/p>
-              &lt;p>Sed do eiusmod tempor incididunt ut labore et dolore.&lt;/p> 
-            &lt;/div>
-            &lt;p>Magna aliqua. Ut enim ad minim veniam.&lt;/p> 
-            &lt;p>Quis nostrud exercitation ullamco.&lt;/a>
             </code></pre>
             <div style = "text-align:right; color: purple; font-weight: bold; font-size: 70%;">
               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
@@ -697,7 +700,7 @@
   <section>
     <h3>Let's Develop It</h3>
     <ul>
-      <li>Let's group some content in our <span class="blue">&lt;aside></span> using a div.</li>
+      <li>Let's add a couple paragraphs to our <span class="blue">&lt;aside></span>, then group them using a div.</li>
       <li>We'll style this div after we learn about IDs &amp; classes!</li>
       <pre>
         <code class="html">
@@ -757,13 +760,13 @@
 <!-- ID vs Class example-->
       <section>
         <h3>IDs vs. Classes</h3>
-          <p><span class = "yellow">ID</span> -- Should only apply to one element on a webpage (like #top -- there is only one top of the page). Can be used to link to different parts of a single page (EXAMPLE).</p>
+          <p><span class = "yellow">ID</span> -- Should only apply to one element on a webpage (like #top -- there is only one top of the page). Can be used to link to different parts of a single page. (Example: <a href="http://www.npr.org/">npr.org</a>).</p>
           <div>
             <pre style="width: 42%; float: left;"><code class = "html">
-            &lt;p id = "this_ID">
+      &lt;p id = "this_ID">
           </code></pre>
           <pre style="width: 42%; float: right;"><code class = "css">
-            #this_ID { color:red; }
+      #this_ID { color:red; }
           </code></pre>
         </div>
       <div style="clear:both;">
@@ -771,10 +774,10 @@
       </div>
        <div>
             <pre style="width: 42%; float: left;"><code class = "html">
-            &lt;p class = "this_class">
+    &lt;p class = "this_class">
           </code></pre>
           <pre style="width: 42%; float: right;"><code class = "css">
-            .this_class { color:#333; }
+    .this_class { color:#333; }
           </code></pre>
         </div>
       </section>  
@@ -784,7 +787,7 @@
         <h3>IDs vs. Classes</h3>
         <div class = "left-align">
           <p class="yellow">Another way to think about it:</p>
-      </p>Like a department store, you just have one women's department, one men's department, one kid's department. These departments are like ID's.</p><br/>
+      </p>Like a department store, you just have one women's department, one men's department, one kids' department. These departments are like ID's.</p><br/>
           <p>Inside each department are all kinds of products: sweaters, shirts, socks, in all colors and sizes. There are multiples of these, so these are like classes.</p>
         </div>
       </section> 
@@ -1042,13 +1045,14 @@
          <div class = "left-align">
          <ul>
          <li>A fixed positioned element is not relative to another HTML element, it is relative to the browser window.</li>
-         <li>A fixed element will not move when you scroll through your browser.</li>
-         </ul>
+         <li>A fixed element will not move when you scroll through your browser.
+        
 
          <pre><code class ="css">
           position: fixed;
           top: 40px;
-        </code></pre>
+        </code></pre></li>
+        <li class="fragment">Try making your social div fixed!</li>
          </div>
        </section>
  
@@ -1162,8 +1166,8 @@
 <!-- Exercise-->
        <section>
          <h3>Let's Develop It</h3>
-         <p>Let's add a footer to our page.</p>
-         <p>Let's clear the footer.</p>
+         <p>Let's add a footer to our page &amp; view in the browser.</p>
+         <p class="fragment">Let's clear the footer.</p>
        </section>
 
 <!-- Z-index -->
@@ -1288,8 +1292,9 @@
        <h3>Wait... How does a website work?</h3>
        <ul>
        <li><p>The HTML and CSS need to be online, not on your computer.</p></li>
+       <li><p>If you buy a web hosting plan, you can upload your files to a webserver.</p></li>
        <li><p>A webserver is a computer that is accessible online</p></li>
-       <li><p>The webserver keeps your files</p></li>
+       <li><p>The webserver stores your files</p></li>
      </ul>
         <img src="images/server.jpg" alt="web server" />
       </section>
@@ -1314,7 +1319,7 @@
     <p>It depends on what you want to do! But here are some possibilities:</p>
     <br>
     <ul>
-      <li>Check out the resources on <a href="">our Intro page</a>.</li>
+      <li>Check out the resources on <a href="http://gdidetroit.com/intro/" target="_blank">our Intro page</a>.</li>
       <li>Think about learning the following (yes, we offer workshops on all of these!):
         <ul>
         <li>Responsive Design</li>
@@ -1331,13 +1336,13 @@
   <h3>Upcoming GDI Events!</h3>
   <ul>
     <li>
-      <span class="green">Saturday 4/5</span>: <a href="">Code &amp; Coffee</a> at Socra Tea
+      <span class="green">Saturday 4/5</span>: <a href="http://www.meetup.com/Girl-Develop-It-Detroit/events/170942872/">Code &amp; Tea</a> at Socra Tea
     </li>
     <li>
-      <span class="green">Saturday 4/12</span>: <a href="">Getting Sassy with CSS</a> at Atomic Object
+      <span class="green">Saturday 4/12</span>: <a href="http://www.meetup.com/Girl-Develop-It-Detroit/events/172340922/">Getting Sassy with CSS</a> at Atomic Object
     </li>
   </ul><br/><br/>
-  <p>Make sure to like us on <a href="">Facebook</a>, follow us on <a href="">Twitter</a>, and watch our <a href="">Meetup group</a> for more awesome events!</p>
+  <p>Make sure to like us on <a href="https://www.facebook.com/GirlDevelopItDetroit">Facebook</a>, follow us on <a href="http://twitter.com/gdidet">Twitter</a>, and watch our <a href="http://www.meetup.com/Girl-Develop-It-Detroit/">Meetup group</a> for more awesome events!</p>
 <br/>
   <a href="http://www.meetup.com/Girl-Develop-It-Detroit/">
     <img src = "images/gdi_logo_badge.png" style="width: 250px; border: none; box-shadow: none;">
