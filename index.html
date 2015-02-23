@@ -1,0 +1,1813 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>Class 1 &mdash; HTML/CSS &mdash; Girl Develop IT</title>
+
+		<meta name="description" content="This is the official Girl Develop It Core HTML/CSS curriculum. It was developed through the contributions of Pamela Fox, Alexis Goldstein, Erin M. Kidwell, Izzy Johnston, Jen Myers, Cara Jo Miller, Laura Eagin, Nicole Rodriguez, and Leeann Drees.
+
+    The course is meant to be taught in 2 four-hour sections. Each of the slides and practice files are customizable according to the needs of a given class or audience.">
+		<meta name="author" content="Girl Develop It">
+
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+		<link rel="stylesheet" href="reveal/css/reveal.css">
+		<link rel="stylesheet" href="reveal/css/theme/gdilight.css">
+		<link rel="stylesheet" href="css/theme/gdi-sass.css" id="theme">
+
+		<!-- For syntax highlighting -->
+		<!-- light editor<link rel="stylesheet" href="lib/css/light.css">-->
+		<!-- dark editor--><link rel="stylesheet" href="reveal/lib/css/light.css">
+
+		<!-- If use the PDF print sheet so students can print slides-->
+
+		<link rel="stylesheet" href="reveal/css/print/pdf.css" type="text/css" media="print">
+
+		<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+	</head>
+
+	<body>
+
+		<div class="reveal">
+
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class="slides">
+			  <!-- Opening slide -->
+			  <!-- WiFi Info -->
+        <section>
+          <h3>Set up your computer for today</h3>
+          <p><strong>Wifi Network:</strong> atomic-detroit-public</p>
+          <p><strong>Password:</strong> atomicpublic</p>
+          <br/>
+            <p><img src="images/chrome_logo.jpg" style="border:none; box-shadow: none; margin: 0 10px;"/><br/>Install <strong>Google Chrome</strong>, if you don't have it already. <span class="blue">www.google.com/chrome</span></p>
+            <p><img src="images/sublimetext_logo.jpg" style="border:none; box-shadow: none; margin: 0 10px;"/><br/>Download and install <strong>SublimeText2.</strong> <span class="blue">www.sublimetext.com/2</span>
+          <br/><br/><small><span style="yellow">Bonus:</span> Find a few images/photos to use later when we start coding.</small>
+        </section>
+
+
+
+        <!--<section>
+          <h3>Optional: Select new color scheme</h3>
+          <img src = "images/sublime-change-color-scheme.png" style="border: none; box-shadow: none;">
+        </section>-->
+
+        <section>
+          <img src = "images/gdi_logo_badge.png" style="border: none; box-shadow: none;">
+          <h3>Beginning HTML and CSS</h3>
+          <h4>Session 1</h4>
+        </section>
+        <!-- Welcome-->
+        <section>
+          <h3>Welcome!</h3>
+          <div class = "left-align">
+          <p>Girl Develop It is here to provide affordable and accessible programs to learn software through mentorship and hands-on instruction.</p>
+          <p class ="green">Some "rules"</p>
+          <ul>
+            <li>We are here for you!</li>
+            <li>Every question is important</li>
+            <li>Help each other</li>
+            <li>Have fun</li>
+          </ul>
+          </div>
+        </section>
+
+        <!--<section>
+          <h3>Meet Your Instructors</h3>
+            <h4>Laura Eagin</h4>
+          <div class="left" style="width: 75%; font-size: 70%; line-height: 1.2em;">
+                      <ul>
+              <li class="fragment" style="margin-bottom: 10px;"><span class="green">2002: </span>Started working as a graphic designer. Print only, please and thank you.</li>
+              <li class="fragment" style="margin-bottom: 10px;"><span class="green">2005: </span>Customized my snazzy MySpace profile</li>
+              <li class="fragment" style="margin-bottom: 10px;"><span class="green">2008: </span>Was paid to update client websites. <br />They had no idea I didn't know what I was doing.</li>
+              <li class="fragment" style="margin-bottom: 10px;"><span class="green">2010: </span>Went solo. Launched my 40th custom WordPress website. Felt like a surgeon.</li>
+              <li class="fragment" style="margin-bottom: 10px;">Twitter: <a href="http://www.twitter.com/choolaura">@chooLaura</a></li>
+              <li class="fragment" style="margin-bottom: 10px;">E-mail: <a href="mailto:lauraeagin@gmail.com">LauraEagin@gmail.com</a></li>
+            </ul>
+          </div>
+          <div class="right" style="width:25%">
+          	<img src="images/lauras_cats.jpg"/>
+          </div>
+        </section>-->
+
+
+         <section>
+          <h3>Meet Your Instructor</h3>
+          <h4>Leeann Drees</h4>
+          <div class="left" style="width: 75%; font-size: 70%; line-height: 1.2em;">
+            <ul>
+              <li class="fragment" style="margin-bottom: 10px;"><span class="green">circa 1998-2005: </span>Spent much of my free time online, making "websites" for fun, customizing my super-cool LiveJournal &amp; MySpace layouts, &amp; thereby discovering the basics of HTML &amp; CSS.</li>
+              <li class="fragment" style="margin-bottom: 10px;"><span class="green">2005 - 2010: </span> Studied Anthropology and Women's &amp; Gender Studies at University of Michigan-Dearborn.
+              <li class="fragment" style="margin-bottom: 10px;"><span class="green">Early 2013: </span>Thinking of a career change, I took <em>this class</em> to brush up my skills &amp; make sure I had a good foundation.</li>
+              <li class="fragment" style="margin-bottom: 10px;"><span class="green">Shortly after that: </span>With the invaluable guidance of my mentor + the GDI network, created my first website for a client!</li>
+              <li class="fragment" style="margin-bottom: 10px;"><span class="green">Now</span> I freelance &amp; serve as GDI Detroit's Community Manager.</li>
+              <li class="fragment" style="margin-bottom: 10px;">Twitter: <a href="http://www.twitter.com/leeanndrees">@leeanndrees</a></li>
+              <li class="fragment" style="margin-bottom: 10px;">E-mail: <a href="mailto:leeann.drees@gmail.com">leeann.drees@gmail.com</a></li>
+            </ul>
+          </div>
+           <div class="right" style="width:25%">
+          	<img src="images/leeanns_cats.jpg"/>
+          </div>
+        </section>
+        <section>
+          <h3>Now it's all about you!</h3>
+          <div class = "left-align">
+          <p>Let's meet each other!</p>
+          <ul>
+            <li>What's your name?</li>
+            <li>Favorite thing about your job/studies?</li>
+            <li>What are you excited to do this spring?</li>
+          </ul>
+          </div>
+        </section>
+
+        <section>
+          <h3>Overview</h3>
+          <ul>
+            <li class="left-align">What is HTML?</li>
+            <li class="left-align">Anatomy of a Website</li>
+            <li class="left-align">HTML Elements</li>
+            <li class="left-align">What is CSS?</li>
+            <li class="left-align">Connecting CSS to HTML</li>
+            <li class="left-align">Using the Inspector</li>
+          </ul>
+        </section>
+
+        <!-- What is HTML?-->
+        <section>
+          <h3>Slides &amp; Reference</h3>
+          <p><a href="http://gdidetroit.com/intro/">gdidetroit.com/intro</a></p>
+        </section>
+
+        <!-- What is HTML?-->
+        <section>
+          <h3>What is HTML?</h3>
+          <p>HTML is the code that allows us to build websites</p>
+          <img src = "images/homepage-view.png">
+        </section>
+
+        <section>
+          <h3>What is HTML?</h3>
+          <p>If you 'view the source', you see this</p>
+          <img src = "images/homepage-html.png">
+        </section>
+
+        <!-- History of HTML-->
+        <section>
+          <h3>History of HTML</h3>
+
+          <div class="left" style="width: 75%;">
+          <ul>
+            <li>Invented by Tim Berners-Lee</li>
+            <li>Created "hypertext" to share<br/>scientific papers</li>
+            <li>First web page August 6, 1991</li>
+            <li>Standardized by w3 Consortium <br/>(pack of super nerds)</li>
+
+          </ul>
+        </div>
+          <div class="right" style="width: 25%;"><img src="images/tim.png" width="300px"><br/><p style="font-size: .4em; color: #888; width: 300px;">Tim Berners-Lee speaking at SXSW 2013.<br/><em>Photo credit: Dennis Lembree</em></p></div>
+        </section>
+
+
+        <!-- Terms-->
+        <section>
+         <h3>Terms</h3>
+         <ul>
+           <li>
+            <div class="fragment"><span class = "green">Web design: </span>The process of planning, structuring and creating a website</div>
+           </li>
+           <li>
+            <div class="fragment"><span class = "green">Web development: </span>The process of programming dynamic web applications</div>
+           </li>
+           <br/>
+           <li>
+            <div class="fragment"><span class = "blue">Front end: </span>The outwardly visible elements of a website or application</div>
+           </li>
+           <li>
+            <div class="fragment"><span class = "blue">Back end: </span>The inner workings and functionality of a website or application.</div>
+           </li>
+         </ul>
+        </section>
+
+        <section>
+          <h3>Anatomy of a website</h3>
+          <p>A website is a way to share your content with the world, using HTML to give structure to that content &amp; CSS to make it look good.</p>
+        </section>
+
+          <!-- Roles of HTML v CSS -->
+        <section>
+          <h3>Anatomy of a website</h3>
+          <div class = "blue"> Your Content</div>
+          <div><span class = "blue">+ HTML: </span>Structure</div>
+          <div><span class = "blue">+ CSS: </span>Presentation</div>
+          <div class = "blue">= Your Website</div>
+            <img src="images/example_site_content.jpg" alt="Example of site content" width="25%"/>
+            <img src="images/example_site_HTML.jpg" alt="Example of site structure" width="25%"/>
+            <img src="images/example_site_HTML_CSS.jpg" alt="Example of site with CSS" width="25%"/>
+
+        </section>
+
+        <section>
+          <h3>What we'll be building today</h3>
+          <div class="left left-align" style="width: 45%;">
+            <p>Today we will be learning how to code a site from scratch using paragraphs, headings, links, images, and lists.</p>
+            <p>We'll add a tiny bit of CSS for colors &amp; fonts, but we're saving CSS layouts for tomorrow.</p>
+          </div>
+          <div class="right" style="width: 45%;">
+            <img src="images/making-this-today.png"/>
+          </div>
+        </section>
+ <!-- Nitty gritty 2 - Tools -->
+        <section>
+          <h3>Tools</h3>
+          <ul>
+            <li>
+              <div class = "yellow">Browser</div>
+              <div><img src="images/chrome_logo.jpg" style="border:none; box-shadow: none; margin: 0 10px;
+float: left;"/>Chrome</div>
+             </li><br />
+             <li>
+              <div class = "yellow">Text Editor</div>
+              <div><img src="images/sublimetext_logo.jpg" style="border:none; box-shadow: none; margin: 0 10px;
+float: left;"/><strong>Sublime Text - Mac or Windows</strong></div>
+<br/><div class="blue">Alternative Text Editors:</div>
+              <div>TextWrangler - Mac</div>
+              <div>Notepad ++ - Windows</div>
+             </li>
+          </ul>
+        </section>
+
+        <!-- Folder Structure -->
+        <section>
+          <h3>Folder Structure</h3>
+          <div class="left" style="width: 45%;">
+          <p class="left-align"><strong>One folder will contain:</strong></p>
+          <ul>
+            <li>HTML Files</li>
+            <li>CSS Files</li>
+            <li>Images</li>
+            <li>Script files</li>
+            <li>Anything else that will appear on your site</li>
+          </ul>
+          </div>
+          <div class="right" style="width: 45%;">
+            <img src="images/folderstructure2.jpg" style="border:none; box-shadow: none;"/>
+          </div>
+        </section>
+
+        <section>
+          <h3>Create Your Folder</h3>
+          <ul>
+            <li>Somewhere easy to remember (perhaps on your desktop?), save a new folder called '<span class="blue">html-site</span>' &mdash; no spaces, no caps!</li>
+            <li>Open Sublime Text &amp; create 2 new files.</li>
+            <li>Save one as <span class="green">index.html</span>.</li>
+            <li>Save the other as <span class="green">styles.css</span>.</li>
+            <li>Make sure both files are saved in your <span class="blue">html-site</span> folder!</li>
+          </ul>
+        </section>
+
+        <section>
+          <h3>Setting up Sublime Text: Open User Settings</h3>
+          <img src = "images/sublime-user-settings.png" style="border: none; box-shadow: none;">
+        </section>
+
+        <section>
+          <h3>Replace existing text with this:</h3>
+          <pre>
+          	<code>
+{
+"auto_complete": false,
+"tab_completion": false,
+"detect_indentation": false,
+"match_tags": false,
+"auto_match_enabled": false
+}
+          	</code>
+          </pre>
+          <h4>After typing this, save and close the tab. You're ready to use Sublime!</h4>
+        </section>
+
+        <!-- HTML element-->
+        <section>
+         <h3>Anatomy of an HTML element</h3>
+         <ul>
+           <li class = "fragment">
+             <strong class="blue">Element</strong>
+             <ul>
+               <li>An individual component of HTML</li>
+               <li>Paragraph, heading, table, list, div, link, image, etc.</li>
+              </ul>
+          </li>
+          <li class = "fragment">
+            <strong class="blue">Tag</strong>
+            <ul>
+              <li>Marks the beginning &amp; end of an element</li>
+               <li>Opening tag and Closing Tag
+               <li>Tags contain characters that indicate the tag's purpose</li>
+             </ul>
+<pre><code class ="html">&lt;tagname>Stuff in the middle&lt;/tagname></code></pre>
+<pre><code class ="html">&lt;p> This is a sample paragraph.&lt;/p></code></pre>
+              </section>
+
+        <!--anatomy of a tag -->
+        <section>
+        	<h3>Tag Breakdown</h3>
+        	<img src="images/tagbreakdown.png" alt="Tag breakdown" style="border: none; box-shadow: none;" />
+        </section>
+        <section>
+         <h3>Anatomy of an HTML element</h3>
+             <p><strong class="blue">Container Element</strong></p>
+             <ul>
+               <li>An element that can contain other elements or
+               content</li>
+               <li>A paragraph (&lt;p>) contains text</li>
+              </ul>
+              <pre><code class = "html">&lt;p>Text goes here&lt;/p> </code></pre>
+			<br/>
+            <p><strong class="blue">Stand Alone Element</strong></p>
+            <ul>
+              <li>An element that cannot contain anything else</li>
+            </ul>
+<pre><code class = "html">&lt;img/>
+&lt;br/></code></pre>
+        </section>
+
+		<section>
+			<h3>Anatomy of an HTML element</h3>
+					<p><strong class="blue">Attribute</strong></p>
+					<ul>
+						<li>Provides additional information about the HTML element</li>
+						<li>Class, ID, language, style, identity, source</li>
+						<li>Placed inside an opening tag, before the right angle bracket.</li>
+					</ul>
+					<br/><br/>
+					<p><strong class="blue">Value</strong></p>
+					<ul>
+					<li>Value is the value assigned to a given attribute.</li>
+					<li>Values must be contained inside quotation marks.</li>
+					</ul>
+
+<pre><code class ="html">&lt;div class="copyright">&copy; GDI 2013&lt;/div>
+&lt;img src="my_picture.jpg" />
+&lt;a href="http://girldevelopit.com">GDI&lt;/a>
+</code></pre>
+
+		</section>
+
+      <section>
+          <h3>Concrete example</h3>
+          <ul>
+            <li class ="fragment" >A paragraph is your content</li>
+            <li class = "fragment">Putting your content into an HTML tag to make it look like a paragraph is Structure
+              <pre><code class ="html">
+                &lt;p>A paragraph is your content&lt;/p>
+              </code></pre>
+          </li>
+          <li class = "fragment">
+            To add the class of "blue," we'd put the attribute &amp; value in the opening &lt;p> tag:
+              <pre>
+                <code class="html">
+                  &lt;p class="blue">A paragraph is your content&lt;/p>
+                </code>
+              </pre>
+          </li>
+        </section>
+
+        <!-- HTML Page-->
+        <section>
+        <h3>Doctype</h3>
+        <p>The ﬁrst thing on an HTML page is the doctype, which tells the browser which version of the markup language the page is using.</p>
+       <hr>
+        <p class="green">In the bad old days, we had to do all this:</p>
+        <pre><code class = "html">
+          &lt;!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML
+          4.01 Transitional//EN" "http://
+          www.w3.org/TR/html4/loose.dtd">
+        </code></pre>
+        <p class="blue">Today, we get to just say this:</p>
+        <pre><code class = "html">
+          &lt;!DOCTYPE html>
+        </code></pre>
+        <p><small>* The doctype is case-insensitive. <br/>DOCtype, doctype, DocType and DoCtYpe are all valid.</small></p>
+        </section>
+
+        <section>
+          <h3>HTML Tag</h3>
+          <p>After &lt;doctype>, the page content must be
+          contained between &lt;html> tags.</p>
+          <pre><code class = "html">
+            &lt;!DOCTYPE html>
+            &lt;html>
+
+            &lt;/html>
+          </code></pre>
+        </section>
+
+        <section>
+          <h3>Head and Body Tags</h3>
+          <div class = "left-align">
+            <p class = "fragment"><span class="green">Head:</span> The head contains the title of the page &amp; meta information about the page. Meta information is not visible to the user, but has many purposes &amp; is how search engines gather information about your page.</p>
+            <p class = "fragment"><span class="green">Body:</span> The body contains the actual content of the page. Everything that is contained in the body is visible to the user.</p>
+          </div>
+        </section>
+        <!--example of head and body tags-->
+        <section>
+        	<h3>Head and Body Tags: Example</h3>
+        	<img src="images/example-headbody.png" alt="example of head and body" />
+        </section>
+        <section>
+          <h3>Head and Body Tags</h3>
+          <pre><code class = "html">
+            &lt;!DOCTYPE html>
+            &lt;html>
+               &lt;head>
+                &lt;title>Title of the page &lt;/title>
+               &lt;/head>
+               &lt;body>
+                The page content here.
+               &lt;/body>
+            &lt;/html>
+          </code></pre>
+        </section>
+
+        <!-- Develop it -->
+        <section>
+        	<h3>Let's develop it!</h3>
+        	<p class="blue">Let's get our web page set up with a:</p>
+          <ul>
+            <li>Doctype</li>
+            <li>HTML tag</li>
+            <li>Head</li>
+            <li>Title</li>
+            <li>Body</li>
+          </ul>
+        	<p>Later we'll add some content to the body!</p>
+        </section>
+        <section>
+          <h3>Check In</h3>
+          <p>Your <span class="blue">index.html</span> file should now have the following content: </p>
+          <pre><code class = "html">
+            &lt;!DOCTYPE html>
+            &lt;html>
+
+               &lt;head>
+                &lt;title>Title of the page &lt;/title>
+               &lt;/head>
+
+               &lt;body>
+                The page content here.
+               &lt;/body>
+
+            &lt;/html>
+          </code></pre>
+        </section>
+
+        <!-- Nesting-->
+        <section>
+          <h3>Nesting</h3>
+          <p>All elements "nest" inside one another</p>
+          <p><small>Nesting is what happens when you put containing tags inside other containing tags. For example, you would put the &lt;p> inside of the &lt;body> tags. The &lt;p> is now nested inside the &lt;body></small></p>
+          <img src = "images/owls.jpg" width="250px"/>
+
+          <p>Whichever element OPENS first CLOSES last</p>
+        </section>
+
+        <!--example of nesting -->
+        <section>
+        	<h3>Nesting: Example</h3>
+        	<p>Elements are 'nested' inside the &lt;body&gt; tag.</p>
+        	<pre><code>
+        	&lt;body&gt;
+        	   &lt;p&gt;A paragraph inside the body tag&lt;/p&gt;
+        	&lt;/body&gt;
+        	</code></pre>
+        	<p>Paragraphs 'nested' inside list items.</p>
+        	<pre><code>
+        	&lt;ul&gt;
+        	   &lt;li&gt;
+        	      &lt;p&gt;A paragraph inside a list item&lt;/p&gt;
+        	   &lt;/li&gt;
+        	&lt;/ul&gt;
+        	</code></pre>
+        </section>
+
+        <!--<section>
+          <h3>Nesting</h3>
+          <p>All elements "nest" inside one another</p>
+          <img src = "images/nesting_simple1.png" style="border: none; box-shadow: none;" />
+          <p>Whichever element OPENS first CLOSES last</p>
+        </section>-->
+
+        <section>
+          <h3>Nesting</h3>
+          <p>All elements "nest" inside one another</p>
+          <img src = "images/nesting_simple2.png" style="border: none; box-shadow: none; width: 560px;" />
+          <p>Whichever element OPENS first CLOSES last</p>
+        </section>
+
+
+        <!-- Elements -->
+
+        <!-- Paragraphs-->
+        <section>
+          <h3>Element: <span class="yellow">Paragraph</span></h3>
+          <div>
+          <div class = "left" style = "width:50%">
+<pre><code>
+  &lt;p>Paragraph 1&lt;/p>
+  &lt;p>Paragraph 2&lt;/p>
+  &lt;p>Paragraph 3&lt;/p>
+</code></pre>
+<pre><code>
+  &lt;p>Paragraph 1&lt;/p> &lt;p>Paragraph 2&lt;/p>  &lt;p>Paragraph 3&lt;/p>
+</code></pre>
+<pre><code>
+  &lt;p>Paragraph 1&lt;/p>
+
+
+  &lt;p>Paragraph 2&lt;/p>
+  &lt;p>Paragraph 3&lt;/p>
+</code></pre>
+          </div>
+          <div><br/><br/><br/><br/>
+          <p>Paragraph 1</p>
+          <p>Paragraph 2</p>
+          <p>Paragraph 3</p>
+
+          </div>
+          <div class ="clear"></div>
+          <br/>
+          <p><small>* White space in HTML is only for humans and their sanity!</small></p>
+          </div>
+        </section>
+
+        <section>
+        	<h3>Example: Paragraphs</h3>
+        	<p>Paragraphs allow you to format your content in a readable fashion.</p>
+        	<img src="images/example-paragraphs.png" alt="Example of Paragraphs in the wild" />
+        	<p><small>* You can edit how paragraphs are displayed with CSS</small></p>
+        </section>
+
+        <!-- Headings-->
+        <section>
+          <h3>Element: <span class="yellow">Heading</span></h3>
+          <div>
+          <div class = "left" style = "width:50%">
+<pre><code>
+  &lt;h1>Heading 1&lt;/h1>
+  &lt;h2>Heading 2&lt;/h2>
+  &lt;h3>Heading 3&lt;/h3>
+  &lt;h4>Heading 4&lt;/h4>
+  &lt;h5>Heading 5&lt;/h5>
+  &lt;h6>Heading 6&lt;/h6>
+</code></pre>
+          </div>
+          <div class = "left" style = "width:50%">
+            <br/>
+            <h1 style = "font-size: 120%">Heading 1</h1>
+            <h2 style = "font-size: 110%">Heading 2</h2>
+            <h3 style = "font-size: 105%">Heading 3</h3>
+            <h4 style = "font-size: 95%">Heading 4</h4>
+            <h5 style = "font-size: 85%">Heading 5</h5>
+            <h6 style = "font-size: 75%">Heading 6</h6>
+          </div>
+          <div class ="clear"></div>
+          <br/>
+          <p>* Heading number indicates hierarchy, not size. Think: Outlines from high school papers</p>
+          </div>
+        </section>
+
+        <!--heading examples-->
+        <section>
+        	<h3>Example: Headings</h3>
+        	<img src="images/example-headings.png" alt="Example of headings" />
+        </section>
+        <!-- Em and Strong-->
+        <section>
+          <h3>Formatted text</h3>
+          <div>
+          <div class = "left" style = "width:65%">
+            <pre>
+              <code>&lt;p>Here's a paragraph with &lt;em>Emphasized&lt;/em> text and &lt;strong>Important&lt;/strong> text.&lt;/p></code>
+            </pre>
+          </div>
+
+          <div class = "left left-align" style = "width:35%; font-size: 70%;">
+            <br/><p>
+              Here's a paragraph with <em>Emphasized</em> text and <strong>Important</strong> text.
+            </p>
+          </div>
+          <div class ="clear"></div>
+
+          <div class="left" style="width: 65%;">
+            <pre><br/>
+              <code>&lt;p>Emphasized text is &lt;em>particulary&lt;/em> <br/>geared towards screen readers because it <br/>instructs them to read this text with a <br/>different voice inflection.&lt;/p></code>
+            </pre>
+          </div>
+
+          <div class = "left left-align" style = "width:35%; font-size: 70%;">
+            <br/> <br/>
+            <p>
+              Emphasized text is <em>particulary</em> geared towards screen readers because it instructs them to read this text with a different voice inflection.
+            </p>
+          </div>
+
+          <div class ="clear"></div>
+        <br/>
+          <p><small>* Notice: If you want to italicize text for appearance and not to communicate meaning, you should use CSS.</small></p>
+          </div>
+        </section>
+<!--develop it!-->
+		<section >
+			<h3>Let's Develop it!</h3>
+			<p class="left-align">Let's add some content to our site!</p>
+			<ul>
+        <li class="lef-align">Add some short paragraphs to the <span class="blue">&lt;body></span> of your site.
+          <ul>
+          <li>Don't want to write a bunch of paragraphs off the top of your head? Grab some example text from a generator on the web.  Some of our favorites:
+            <ul>
+              <li><a href="http://www.lipsum.com/" target="_blank">Lorem Ipsum</a></li>
+              <li><a href="http://www.cupcakeipsum.com/" target="_blank">Cupcake Ipsum</a></li>
+              <li><a href="http://www.catipsum.com/" target="_blank">Cat Ipsum</a></li>
+            </ul>
+        </ul></li>
+        <li class="fragment">View in browser!</li>
+      </ul>
+      </section>
+
+      <section>
+        <h3>Take it Up a Level!</h3>
+        <ul>
+          <li class="left-align">Add a page title in an H1</li>
+      <li class="left-align">Add one of each other level of heading (H2-H6) in between your paragraphs. </li>
+          <li class="left-align">Italicize and bold some text within a few paragraphs.</li>
+			</ul>
+		</section>
+
+    <section>
+      <h3>Check In</h3>
+      <p>Now your <span class="blue">index.html</span> file should be looking something like this:</p>
+      <pre><code class = "html" style="min-height: 300px; max-height: 475px;">
+            &lt;!DOCTYPE html>
+            &lt;html>
+
+               &lt;head>
+                  &lt;title>Title of the page &lt;/title>
+               &lt;/head>
+
+               &lt;body>
+
+                 &lt;h1&gt;Heading 1&lt;/h1&gt;
+                  &lt;p>A paragraph!&lt;/p>
+                  &lt;p>Another paragraph!&lt;/p>
+
+                 &lt;h2&gt;Heading 2&lt;/h2&gt;
+                  &lt;p>Yet another paragraph.&lt;/p>
+                  &lt;p>I'm a paragraph too!&lt;/p>
+
+                 &lt;h3&gt;Heading 3&lt;/h3&gt;
+                  &lt;p>I'm a paragraph with some &lt;em>emphasized&lt;/em> text.&lt;/p>
+                  &lt;p>I'm a paragraph with &lt;strong>strong&lt;/strong> text.&lt;/p>
+
+                 &lt;h4&gt;Heading 4&lt;/h4&gt;
+                  &lt;p>Another paragraph!&lt;/p>
+                  &lt;p>Maybe your content is more fun?&lt;/p>
+
+                 &lt;h5&gt;Heading 5&lt;/h5&gt;
+                  &lt;p>Another paragraph!&lt;/p>
+                  &lt;p>Yet another paragraph.&lt;/p>
+
+                 &lt;h6&gt;Heading 6&lt;/h6&gt;
+                  &lt;p>Almost done!&lt;/p>
+                  &lt;p>Yay!&lt;/p>
+
+               &lt;/body>
+
+            &lt;/html>
+          </code></pre>
+    </section>
+
+		<!-- Links-->
+      <section>
+          <h3>Element: <span class="yellow">Link</span></h3>
+          <p class="blue">Tag: &lt;a>&lt;/a></p>
+          <p>The a tag defines an anchor and may be used to link to another document, as a bookmark on a page, or as both.</p>
+        </section>
+        <section>
+          <h3>Element: <span class="yellow">Link</span></h3>
+          <p class="green">Links have three components</p>
+          <ul>
+            <li><span class="blue">Tag</span>: &lt;a>&lt;/a></li>
+            <li><span class="blue">Href attribute</span>: "http://www.girldevelopit.com"</li>
+            <li><span class="blue">Target attribute</span>: target="_blank"</li>
+          </ul>
+<pre><code>
+&lt;a href ="http://www.girldevelopit.com" target="_blank">GDI&lt;/a>
+</code></pre>
+        <p><a href ="http://www.girldevelopit.com" target="_blank" style="text-decoration: underline;">GDI</a></p>
+        <p>Surround text or images with the &lt;a&gt; tag to turn them into links</p>
+        </section>
+
+        <!-- Link Attributes -->
+        <section>
+        	<h3>Link Attributes</h3>
+        	<p>Links can have attributes that tell the link to do different actions like open in a new tab, or launch your e-mail program.</p>
+        	<pre><code>
+&lt;a href="home.html" target="_blank">Link Text&lt;/a>
+        	</code></pre>
+        	<p><small>Link opens in a new window/tab with <strong>target="_blank"</strong></small></p>
+        	<pre><code>
+&lt;a href="mailto:detroit@girldevelopit.com">E-mail us!&lt;/a>
+        	</code></pre>
+        	<p><small>Link opens mail program by inserting <strong>mailto:</strong> directly before the email address.</small></p>
+
+        </section>
+
+        <!-- Lets develop it-->
+        <section>
+        	<h3>Let's Develop It</h3>
+        	<p>Let's add links to our site!</p>
+        	<br/>
+          <p>Add links that:</p>
+          <ul>
+            <li>Open in the same window or tab.</li>
+            <li>Open in a new window or tab.</li>
+            <li>Link to an e-mail address.</li>
+          </ul>
+        </section>
+
+        <section>
+          <h3>Check In</h3>
+          <p>Our friendly <span class="blue">index.html</span> file is starting to look a bit like so:</p>
+        <pre><code class = "html" style="min-height: 300px; max-height: 475px;">
+            &lt;!DOCTYPE html>
+            &lt;html>
+
+               &lt;head>
+                  &lt;title>Title of the page &lt;/title>
+               &lt;/head>
+
+               &lt;body>
+                 &lt;h1&gt;Heading 1&lt;/h1&gt;
+                  &lt;p>A paragraph!&lt;/p>
+                  &lt;p>Another paragraph, with a &lt;a href="http://google.com">link&lt;/a>!&lt;/p>
+
+                 &lt;h2&gt;Heading 2&lt;/h2&gt;
+                  &lt;p>Yet another paragraph.&lt;/p>
+                  &lt;p>I'm a paragraph too, and I have a &lt;a href="http://girldevelopit.com" target="_blank">link that opens in a new tab&lt;/a>!&lt;/p>
+
+                 &lt;h3&gt;Heading 3&lt;/h3&gt;
+                  &lt;p>I'm a paragraph with some &lt;em>emphasized&lt;/em> text.&lt;/p>
+                  &lt;p>I'm a paragraph with &lt;strong>strong&lt;/strong> text and an &lt;a href="mailto:no-reply@gdidetroit.com">email link&lt/a>.&lt;/p>
+
+                 &lt;h4&gt;Heading 4&lt;/h4&gt;
+                  &lt;p>Another paragraph!&lt;/p>
+                  &lt;p>Maybe your content is more fun?&lt;/p>
+
+                 &lt;h5&gt;Heading 5&lt;/h5&gt;
+                  &lt;p>Another paragraph!&lt;/p>
+                  &lt;p>Yet another paragraph.&lt;/p>
+
+                 &lt;h6&gt;Heading 6&lt;/h6&gt;
+                  &lt;p>Almost done!&lt;/p>
+                  &lt;p>Yay!&lt;/p>
+               &lt;/body>
+
+            &lt;/html>
+          </code></pre>
+        </section>
+
+        <!-- Images-->
+        <section>
+          <h3>Element: <span class="yellow">Image</span></h3>
+          <p>Images have three components</p>
+          <ul>
+            <li><span class="blue">Tag</span>: &lt;img/></li>
+            <li><span class="blue">Src attribute</span>: "http://girldevelopit.com/assets/pink-logo.png"</li>
+            <li><span class="blue">Alt attribute</span>: "Girl Develop It logo"</li>
+          </ul>
+<pre><code>
+&lt;img src ="http://girldevelopit.com/assets/pink-logo.png" alt = "Girl Develop It Logo"/>
+</code></pre>
+<img src ="http://girldevelopit.com/assets/pink-logo.png" alt = "Girl Develop It Logo"/>
+          <p><small>* Notice: This tag is our first example of a stand-alone or "self-closing" element.</small></p>
+
+        </section>
+
+
+        <!-- relative & absolute links -->
+        <section>
+          <h3>Relative vs. Absolute paths for links &amp; images</h3>
+          <ul>
+              <li><strong class="blue">Relative</strong> paths change depending upon the page the link is on.
+                  <ul style="font-size: 70%;  margin-top: 15px;">
+                    <li>Links within the same directory need no path information. <code class="blue">"filename.jpg"</code></li>
+                    <li>Subdirectories are listed without preceding slashes. <code class="blue">"images/filename.jpg"</code></li>
+                  </ul>
+                </li>
+              </ul>
+          <ul style="margin-top: 25px;">
+
+              <li><strong class="blue">Absolute</strong> paths refer to a specific location of a file, including the domain.
+            <ul style="font-size: 70%; margin-top: 15px;">
+              <li>Typically used when pointing to a link that is not within your own domain. <code class="blue">"http://www.girldevelopit.com/chapters/detroit"</code></li>
+            </ul>
+            </li>
+          </ul>
+        </section>
+        <!-- Line Break-->
+        <section>
+          <h3>Element: <span class="yellow">Line Break</span></h3>
+          <div>
+          <div class = "left" style = "width:50%">
+<pre><code>
+&lt;p>
+  Imagine there's no Heaven &lt;br/>
+  It's easy if you try &lt;br/>
+  No hell below us  &lt;br/>
+  Above us only sky
+&lt;/p>
+</code></pre>
+          </div>
+          <div class = "left left-align" style = "width:50%">
+            <br/>
+            <p>
+            Imagine there's no Heaven <br/>
+            It's easy if you try <br/>
+            No hell below us  <br/>
+            Above us only sky
+            </p>
+          </div>
+          <div class ="clear"></div>
+          <br/>
+          <br/>
+          </div>
+        </section>
+
+        <!-- Develop it! -->
+        <section>
+        	<h3>Let's Develop It!</h3>
+        	<p>Let's add some:</p>
+          <ul>
+            <li>Images</li>
+            <li>Line breaks</li>
+            <li>And let's turn some of our images into links!</li>
+          </ul>
+        </section>
+
+<section>
+  <h3>Check In</h3>
+          <p>Our <span class="blue">index.html</span> file now looks something like:</p>
+        <pre><code class = "html" style="min-height: 300px; max-height: 475px;">
+            &lt;!DOCTYPE html>
+            &lt;html>
+
+               &lt;head>
+                  &lt;title>Title of the page &lt;/title>
+               &lt;/head>
+
+               &lt;body>
+                 &lt;h1&gt;Heading 1&lt;/h1&gt;
+                  &lt;p>A paragraph with an image: &lt;img src="images/cat.jpg" />&lt;/p>
+                  &lt;p>Another paragraph, with a &lt;a href="http://google.com">link&lt;/a>!&lt;/p>
+
+                 &lt;h2&gt;Heading 2&lt;/h2&gt;
+                  &lt;p>Yet another paragraph, with &lt;br/>
+                  a line break.&lt;/p>
+                  &lt;p>I'm a paragraph too, and I have a &lt;a href="http://girldevelopit.com" target="_blank">link that opens in a new tab&lt;/a>!&lt;/p>
+
+                 &lt;h3&gt;Heading 3&lt;/h3&gt;
+                  &lt;p>I'm a paragraph with some &lt;em>emphasized&lt;/em> text.&lt;/p>
+                  &lt;p>I'm a paragraph with &lt;strong>strong&lt;/strong> text and an &lt;a href="mailto:no-reply@gdidetroit.com">email link&lt/a>.&lt;/p>
+
+                 &lt;h4&gt;Heading 4&lt;/h4&gt;
+                  &lt;p>Another paragraph!&lt;/p>
+                  &lt;p>Maybe your content is more fun?&lt;/p>
+
+                 &lt;h5&gt;Heading 5&lt;/h5&gt;
+                  &lt;p>Another paragraph!&lt;/p>
+                  &lt;p>Yet another paragraph.&lt;/p>
+
+                 &lt;h6&gt;Heading 6&lt;/h6&gt;
+                  &lt;p>Almost done!&lt;/p>
+                  &lt;p>Yay! This is a good place for a linked image: &lt;a href="http://girldevelopit.com">&lt;img src="images/logo.jpg"/>&lt;/a>&lt;/p>
+
+               &lt;/body>
+
+            &lt;/html>
+          </code></pre>
+        </section>
+
+<!-- What's wrong with my code?  -->
+ <section>
+       <h3>What's wrong with my code?</h3>
+       <p>Why do you think this code isn't working?</p>
+        <div class="fragment">
+        <br/>
+        <p class="red left-align">WRONG:</p>
+        <pre><code>
+&lt;p>A paragraph of text&lt;p/></code></pre>
+        </div>
+        <div class="fragment">
+           <br/>
+        <p class="green left-align">CORRECT:</p>
+        <pre><code>
+&lt;p>A paragraph of text&lt;/p></code></pre>
+<p><small>Make sure the closing slash comes before the ending tag name.</small></p>
+        </div>
+       </section>
+
+<section>
+       <h3>Pop Quiz!</h3>
+       <p>Which link will open in a new window or tab?</p>
+        <div style="width:100%;">
+        <pre><code class="html">
+&lt;a href="http://www.google.com"> Search &lt;/a></code></pre>
+        </div>
+        <div style="width:100%;">
+        <pre><code class="html">
+&lt;a href="http://www.google.com" target="_blank"> Search &lt;/a>
+</code></pre>
+        </div>
+<p class="fragment"><small>The <span class="green">target="_blank"</span> tells the browser to open the link in a new window or tab.</small></p>
+
+</section>
+
+        <!-- Lists-->
+        <section>
+          <h3>Element: <span class="yellow">Unordered and ordered lists</span></h3>
+          <div>
+          <div class = "left" style = "width:50%">
+<pre><code>
+  &lt;ul>
+    &lt;li>List Item&lt;/li>
+    &lt;li>Another List Item&lt;/li>
+  &lt;/ul>
+</code></pre>
+<pre><code>
+  &lt;ol>
+    &lt;li>List Item&lt;/li>
+    &lt;li>Another List Item&lt;/li>
+  &lt;/ol>
+</code></pre>
+          </div>
+          <div class = "left" style = "width:50%">
+            <p class="blue">Unordered list (bullets)</p>
+            <ul>
+              <li>List Item</li>
+              <li>Another List Item</li>
+            </ul>
+            <br/>
+            <br/>
+            <p class="blue">Ordered list (sequence)</p>
+            <ol>
+              <li>List Item</li>
+              <li>Another List Item</li>
+            </ol>
+          </div>
+          <div class ="clear"></div>
+          </div>
+        </section>
+
+        <!-- example of lists -->
+        <section>
+        	<h3>Lists: Examples</h3>
+        	<p>Lists can be used to organize any list of items.</p>
+        	<img src="images/example-lists.png" alt="Examples of lists"/>
+        	<p><small>You'd be surprised how often lists are used in web design.</small></p>
+        </section>
+
+        <!-- Develop it!-->
+        <section>
+        	<h3>Let's Develop it!</h3>
+
+        	<p class="blue">Let's add one of each:</p>
+          <ul>
+          <li>Ordered list</li>
+          <li>Unordered list</li>
+          </ul>
+<br/><br/>
+          <p class="yellow">More advanced:</p>
+        	<li>A list of links.</li>
+          <li>A list of images!</li>
+        </section>
+
+<section>
+  <h3>Check In</h3>
+          <p>Our <span class="blue">index.html</span> now has headings paragraphs, links, images, and lists -- whew!:</p>
+
+        <pre><code class = "html" style="min-height: 300px; max-height: 475px;">
+            &lt;!DOCTYPE html>
+            &lt;html>
+
+               &lt;head>
+                  &lt;title>Title of the page &lt;/title>
+               &lt;/head>
+
+               &lt;body>
+                 &lt;h1&gt;Heading 1&lt;/h1&gt;
+                  &lt;p>A paragraph with an image: &lt;img src="images/cat.jpg" />&lt;/p>
+                  &lt;p>Another paragraph, with a &lt;a href="http://google.com">link&lt;/a>!&lt;/p>
+
+                 &lt;h2&gt;Heading 2&lt;/h2&gt;
+                  &lt;p>Yet another paragraph, with &lt;br/>
+                  a line break.&lt;/p>
+                  &lt;p>I'm a paragraph too, and I have a &lt;a href="http://girldevelopit.com" target="_blank">link that opens in a new tab&lt;/a>!&lt;/p>
+                  &lt;p>Here's an unordered list:&lt;/p>
+                    &lt;ul>
+                      &lt;li>A thing &lt;/li>
+                      &lt;li>Another thing &lt;/li>
+                      &lt;li>A different thing &lt;/li>
+                    &lt;/ul>
+
+                 &lt;h3&gt;Heading 3&lt;/h3&gt;
+                  &lt;p>I'm a paragraph with some &lt;em>emphasized&lt;/em> text.&lt;/p>
+                  &lt;p>Here's an ordered list:&lt;/p>
+                    &lt;ol>
+                      &lt;li>Item one &lt;/li>
+                      &lt;li>Item two &lt;/li>
+                      &lt;li>Item three &lt;/li>
+                    &lt;/ol>
+                  &lt;p>I'm a paragraph with &lt;strong>strong&lt;/strong> text and an &lt;a href="mailto:no-reply@gdidetroit.com">email link&lt/a>.&lt;/p>
+
+                 &lt;h4&gt;Heading 4&lt;/h4&gt;
+                  &lt;p>Another paragraph!&lt;/p>
+                  &lt;p>Maybe your content is more fun?&lt;/p>
+
+                 &lt;h5&gt;Heading 5&lt;/h5&gt;
+                  &lt;p>Another paragraph!&lt;/p>
+                  &lt;p>Yet another paragraph.&lt;/p>
+
+                 &lt;h6&gt;Heading 6&lt;/h6&gt;
+                  &lt;p>Almost done!&lt;/p>
+                  &lt;p>Yay! This is a good place for a linked image: &lt;a href="http://girldevelopit.com">&lt;img src="images/logo.jpg"/>&lt;/a>&lt;/p>
+
+               &lt;/body>
+
+            &lt;/html>
+          </code></pre>
+        </section>
+
+        <!--Comments-->
+        <section>
+        	<h3>Comments</h3>
+        	<p>You can add comments to your code that will not be seen by the browser, but only visible when viewing the code.</p>
+        	<pre><code>
+&lt;!-- Comment goes here -->
+        	</code></pre>
+        	<p><small>Comments can be used to organize your code into sections so you (or someone else) can easily understand your code. It can also be used to 'comment out' large chunks of code to hide it from the browser.</small></p>
+        	<pre><code>
+&lt;!-- Beginning of header -->
+   &lt;header>Header Content &lt;/header>
+&lt;!-- End of header -->
+
+&lt;!--
+  &lt;ol>
+    &lt;li>List Item&lt;/li>
+    &lt;li>Another List Item&lt;/li>
+  &lt;/ol>
+-->
+        	</code></pre>
+        </section>
+
+        <section>
+          <h3>Tables</h3>
+          <p>Tables are a way to represent complex information <br/>in a grid format.</p>
+          <p>Tables are made up of rows and columns.</p>
+
+          <div>
+          <div class = "left" style = "width:50%">
+
+<pre><code>
+&lt;table>
+  &lt;tr>
+    &lt;th>Head&lt;/th>
+    &lt;th>Head&lt;/th>
+  &lt;/tr>
+  &lt;tr>
+    &lt;td>Data&lt;/td>
+    &lt;td>Data&lt;/td>
+  &lt;/tr>
+&lt;/table>
+</code></pre>
+          </div>
+          <div class = "left left-align" style = "width:50%">
+            <br/>
+            <table style="border: 1px solid">
+              <tr>
+                <th style="border: 1px solid">Head</th>
+                <th style="border: 1px solid">Head</th>
+              </tr>
+              <tr>
+                <td style="border: 1px solid">Data</td>
+                <td style="border: 1px solid">Data</td>
+              </tr>
+            </table>
+          </div>
+          <div class ="clear"></div>
+          </div>
+        </section>
+
+        <!-- Table Examples -->
+        <section>
+        	<h3>Tables: Examples</h3>
+        	<p>Tables can be styled with CSS to add zebra striping or to highlight important rows/columns.</p>
+        	<img src="images/example-tables.png" alt="Example of tables" />
+        </section>
+
+
+        <!-- Character codes-->
+        <section>
+          <h3>Character codes</h3>
+          <p>There are character codes for many different characters in many different languages</p>
+          <div class="left" style="width:70%">
+          <ul>
+            <li>Delta: &amp;delta; &delta;</li>
+            <li>Copyright symbol: &amp;copy; &copy;</li>
+            <li>Grave: &amp;grave; &grave;</li>
+            <li>An grave a: &amp;agrave; &agrave;</li>
+            <li>A full list is available at <a href="http://htmlandcssbook.com/extras/html-escape-codes/" target="_blank">htmlandcssbook.com/extras/html-escape-codes</a></li>
+          </ul>
+          </div>
+          <div class="right" style="width: 30%;">
+          	<img src="images/example-characters.png" alt="Example of Characters"/>
+          </div>
+
+        </section>
+
+<!-- What's wrong with my code?  -->
+      <section>
+        <h3>What's wrong with my code?</h3>
+        <p>Why do you think this code isn't working?</p>
+        <div class="fragment">
+         <br/>
+        <p class="red left-align">WRONG:</p>
+        <pre><code>
+&lt;a href="index.html" Home Page&lt;/a></code></pre>
+        </div>
+        <div class="fragment">
+         <br/>
+        <p class="green left-align">CORRECT:</p>
+        <pre><code>
+&lt;a href="index.html">Home Page&lt;/a></code></pre>
+<p><small>Don't forget to make sure all your brackets are enclosing your tag name and tag attributes.</small></p>
+        </div>
+       </section>
+
+       <section>
+        <h3>What's wrong with my code?</h3>
+        <p>Why do you think this code isn't working?</p>
+        <div class="fragment">
+         <br/>
+        <p class="red left-align">WRONG:</p>
+        <pre><code>
+    &lt;ul>
+      &lt;li Milk/>
+      &lt;li Eggs/>
+      &lt;li Cocoa Puffs/>
+    &lt;/ul>
+</code></pre>
+        </div>
+        <div class="fragment">
+         <br/>
+        <p class="green left-align">CORRECT:</p>
+        <pre><code>
+    &lt;ul>
+      &lt;li>Milk&lt;/li>
+      &lt;li>Eggs&lt;/li>
+      &lt;li>Cocoa Puffs&lt;/li>
+    &lt;/ul>
+</code></pre>
+<p><small>Every list item gets its own set of open and close li tags, lists are not self-closing tags.</small></p>
+        </div>
+       </section>
+
+
+        <!-- Questions and Break -->
+        <section>
+          <h2>Questions? Frustrations?</h2>
+          <p>We're here to help!</p>
+          <img src="images/trex-sparkler.jpg" alt="Frustrated? Let us help!" />
+        </section>
+
+
+        <!-- What is CSS-->
+        <section>
+          <h3>CSS: What is it?</h3>
+          <p><span class="blue">CSS</span> = Cascading Style Sheets</p>
+          <br/>
+          <p>CSS is a "<span class="green">style sheet language</span>" that lets you style the elements on your page.</p>
+          <br/>
+          <p>CSS is works in conjunction with HTML, but is not HTML itself.</p>
+        </section>
+
+                   <!-- Role of HTML v. CSS-->
+        <section>
+          <h3>Anatomy of a website</h3>
+            <img src="images/example_site_content.jpg" alt="Example of site content" width="25%"/>
+            <img src="images/example_site_HTML.jpg" alt="Example of site structure" width="25%"/>
+            <img src="images/example_site_HTML_CSS.jpg" alt="Example of site with CSS" width="25%"/>
+            <div class = "blue"> Your Content + HTML + CSS = Your Website</div>
+        </section>
+
+                        <!-- Exercise-->
+        <section>
+          <h3>Let's develop it</h3>
+          <ul>
+            <li>Type this line of code in the head of your HTML file:</li>
+          <pre><code class="html">
+            &lt;link rel="stylesheet" type="text/css" href="styles.css" />
+          </code>
+        </pre>
+            <li>Make sure you have a <span class="green">styles.css</span> document saved in your <span class="blue">html-site</span> folder!</li>
+          </ul>
+        </section>
+
+        <section>
+  <h3>Check In</h3>
+          <p>Our <span class="blue">index.html</span> file now links to our <span class="blue">styles.css</span> document:</p>
+
+        <pre><code class = "html" style="min-height: 300px; max-height: 475px;">
+            &lt;!DOCTYPE html>
+            &lt;html>
+
+               &lt;head>
+                  &lt;link rel="stylesheet" type="text/css" href="styles.css" />
+                  &lt;title>Title of the page &lt;/title>
+               &lt;/head>
+
+               &lt;body>
+                 &lt;h1&gt;Heading 1&lt;/h1&gt;
+                  &lt;p>A paragraph with an image: &lt;img src="images/cat.jpg" />&lt;/p>
+                  &lt;p>Another paragraph, with a &lt;a href="http://google.com">link&lt;/a>!&lt;/p>
+
+                 &lt;h2&gt;Heading 2&lt;/h2&gt;
+                  &lt;p>Yet another paragraph, with &lt;br/>
+                  a line break.&lt;/p>
+                  &lt;p>I'm a paragraph too, and I have a &lt;a href="http://girldevelopit.com" target="_blank">link that opens in a new tab&lt;/a>!&lt;/p>
+                  &lt;p>Here's an unordered list:&lt;/p>
+                    &lt;ul>
+                      &lt;li>A thing &lt;/li>
+                      &lt;li>Another thing &lt;/li>
+                      &lt;li>A different thing &lt;/li>
+                    &lt;/ul>
+
+                 &lt;h3&gt;Heading 3&lt;/h3&gt;
+                  &lt;p>I'm a paragraph with some &lt;em>emphasized&lt;/em> text.&lt;/p>
+                  &lt;p>Here's an ordered list:&lt;/p>
+                    &lt;ol>
+                      &lt;li>Item one &lt;/li>
+                      &lt;li>Item two &lt;/li>
+                      &lt;li>Item three &lt;/li>
+                    &lt;/ol>
+                  &lt;p>I'm a paragraph with &lt;strong>strong&lt;/strong> text and an &lt;a href="mailto:no-reply@gdidetroit.com">email link&lt/a>.&lt;/p>
+
+                 &lt;h4&gt;Heading 4&lt;/h4&gt;
+                  &lt;p>Another paragraph!&lt;/p>
+                  &lt;p>Maybe your content is more fun?&lt;/p>
+
+                 &lt;h5&gt;Heading 5&lt;/h5&gt;
+                  &lt;p>Another paragraph!&lt;/p>
+                  &lt;p>Yet another paragraph.&lt;/p>
+
+                 &lt;h6&gt;Heading 6&lt;/h6&gt;
+                  &lt;p>Almost done!&lt;/p>
+                  &lt;p>Yay! This is a good place for a linked image: &lt;a href="http://girldevelopit.com">&lt;img src="images/logo.jpg"/>&lt;/a>&lt;/p>
+
+               &lt;/body>
+
+            &lt;/html>
+          </code></pre>
+        </section>
+
+        <section>
+          <h3>CSS: What does it look like?</h3>
+          <img src = "images/homepage-css.png">
+        </section>
+
+        <!-- The CSS Rule-->
+        <section>
+          <h3>The CSS Rule</h3>
+          <img src="images/cssrule_oneline.jpg" alt="The CSS Rule one line" style="border: none; box-shadow: none;"/>
+        </section>
+        <section>
+          <h3>The CSS Rule</h3>
+          <img src="images/cssrule_two_ways.jpg" alt="The CSS Rule and spacing" style="border: none; box-shadow: none;"/>
+        </section>
+
+        <!-- CSS Syntax -->
+        <section>
+          <h3>CSS Syntax</h3>
+          <div class = "left-align">
+            <p>Declarations:  Property and value of style you plan use on HTML element. </p>
+          <p>Declarations end with a semicolon</p>
+          <p>Declaration groups are surrounded by curly brackets.</p>
+          </div>
+
+<pre><code class = "html">
+selector {
+  property: value;
+  property: value;
+  property: value;
+}
+</code></pre>
+        </section>
+
+        <!-- Selectors elements-->
+        <section>
+        <h3>Selector: Element</h3>
+<pre><code class = "html">
+p {
+  property: value;
+}
+</code></pre>
+      <p>Selects all paragraph elements.</p>
+<pre><code class = "html">
+img {
+  property: value;
+}
+</code></pre>
+        <p>Selects all image elements.</p>
+        </section>
+
+
+        <!-- Color-->
+        <section>
+          <h3>Property: Color</h3>
+          <p>The color property changes the color of the text.</p>
+<pre><code class = "html">
+p {
+  color: red;
+  color: #ff0000;
+  color: rgb(255, 0, 0);
+}
+</code></pre>
+        <p>Color name</p>
+        <p>Hexadecimal value</p>
+        <p>RGB value</p>
+        <p class="left"><small>The 17 standard colors are: <font color="aqua" style="background:black;">aqua</font>, black, <font color="blue">blue</font>, <font color="fuchsia">fuchsia</font>, <font color="gray">gray</font>, <font color="grey">grey</font>, <font color="green">green</font>, <font color="lime">lime</font>, <font color="maroon">maroon</font>, <font color="navy">navy</font>, <font color="olive">olive</font>, <font color="purple">purple</font>, <font color="red">red</font>, <font color="silver" style="background:black;">silver</font>, <font color="teal">teal</font>, <font color="white" style="background:black;">white</font>, and <font color="yellow" style="background:black;">yellow</font>.</small></p>
+        </section>
+
+        </section>
+        <section>
+          <h3>Old-school Hexidecimal Table</h3>
+          <div><a href="http://www.w3schools.com/html/html_colors.asp" target="_blank" ><img src="images/hextable.gif"/></a></div>
+        </section>
+
+        <section>
+          <h3>How to find ALL THE COLORS!</h3>
+          <ul>
+            <li>If you work in Photoshop, you can find your colors there.</li>
+            <li>If you have a Mac, you have a built-in color finder called "Digital ColorMeter," which will give you the RGB value of any color on your screen. (<a href="">More info</a>)</li>
+            <li>Lots of websites!
+              <ul>
+                <li><a href="https://kuler.adobe.com/create/color-wheel/">Kuler:</a> Adobe's interactive color wheel.</li>
+                <li><a href="http://www.w3schools.com/tags/ref_colorpicker.asp">Color Picker:</a> Simpler color wheel from w3schools.</li>
+                <li><a href="http://www.colourlovers.com/">ColourLovers:</a> Palettes, color trends, &amp; more.</li>
+                <li><a href="http://hexu.al/">Hexu.al:</a> Colorful words!</li>
+              </ul>
+            </li>
+
+        </section>
+
+        <!-- Background color-->
+        <section>
+          <h3>Property: <span class="yellow">Background-color</span></h3>
+          <p>The background-color property changes the color of the background.</p>
+<pre><code class = "css">
+p {
+  background-color: black;
+  background-color: #000000;
+  background-color: rgb(0,0,0);
+}
+</code></pre>
+        </section>
+
+        <!-- Exercise-->
+        <section>
+          <h3>Let's develop it</h3>
+          <ul>
+            <li>Open your .CSS file</li>
+            <li>Create a CSS rule for the p tag, the h1 tag and the a tag</li>
+          </ul>
+<pre><code class = "css">
+p {
+  color:grey;
+}
+
+h1 {
+  color: #fff;
+  background-color: #333;
+}
+
+a {
+  color: orange;
+}
+          </code></pre>
+        </section>
+
+
+        <!-- Font family-->
+        <section>
+          <h3>Property: Font-family</h3>
+          <p>The font-family property deﬁnes which font is used.</p>
+<pre><code class = "html">
+p {
+  font-family: "MySpecificFont", "Times New Roman", serif;
+}
+</code></pre>
+          <p>Specific font name</p>
+          <p>Generic name</p>
+          <p>Comma-separated list</p>
+          <p>Hierarchy</p>
+        </section>
+
+      <section>
+        <h3>Where do I find fonts?</h3>
+        <ul>
+          <li><span class="green">Web-safe fonts</span> are assumed to be installed on <em>most</em> computers.</li>
+          <li><span class="green">Web fonts</span> are hosted online &amp; imported to your site via CSS (magic!)
+            <ul>
+              <li>not supported by old browsers</li>
+              <li>may be disabled from displaying in the browser</li>
+              <li>using too many will slow down your page</li>
+            </ul>
+          </li>
+          <li>We use a comma-separated list or <span class="green">font stack</span> for either kind.</li>
+          <hr>
+          <li class="fragment">Commonly used font combinations at <a href="http://www.w3schools.com/cssref/css_websafe_fonts.asp">w3schools</a>.</li>
+          <li class="fragment">Loads of free web fonts at <a href="http://www.google.com/fonts/">Google Fonts</a></li>
+          </li>
+          </ul>
+
+      </section>
+
+        <!-- Font size -->
+        <section>
+          <h3>Property: Font-size</h3>
+          <p>The font-size property speciﬁes the size of the font.</p>
+<pre><code class = "html">
+p {
+  font-size: 12px;
+  font-size: 1.5em;
+  font-size: 100%;
+}
+</code></pre>
+          <p>Pixels</p>
+          <p>"em"</p>
+          <p>Percentage</p>
+        </section>
+
+        <!-- Fonts-->
+        <section>
+          <h3>Property: Fonts (shorthand)</h3>
+<pre><code class = "html">
+p {
+  font-style: italic;
+  font-weight: bold;
+  font-size: 10px;
+  font-family: sans-serif;
+}
+</code></pre>
+          OR
+<pre><code class = "html">
+p {
+  font: italic bold 10px sans-serif;
+}
+</code></pre>
+        </section>
+
+        <!-- Exercise-->
+        <section>
+          <h3>Let's develop it</h3>
+          <ul>
+            <li>Assign a font family to your paragraph and your h1 tags</li>
+          </ul>
+<pre><code class = "css">
+p {
+  font: italic bold 10px serif;
+}
+
+h1 {
+  font-family: CenturyGothic, Impact, sans-serif;
+}
+          </code></pre>
+        </section>
+
+
+
+
+
+        <!-- Selector position-->
+        <section>
+        <h3>Selector: Child</h3>
+<pre><code class = "html">
+p em {
+  color: yellow;
+}
+</code></pre>
+       <p>Selects all em elements that are within a paragraph</p>
+<pre><code class = "html">
+&lt;p>This is &lt;em>important.&lt;/em>&lt;/p>
+</code></pre>
+        <p>The associated HTML.</p>
+      </section>
+
+        <!-- Exercise-->
+        <section>
+          <h3>Let's develop it</h3>
+          <ul>
+            <li>In your HTML file, identify a child selector you'd like to apply some styling to.</li>
+            <li>In your CSS file, write a rule for that particular child.</li>
+          <hr>
+          <li class="fragment">Example:
+          <pre>
+            <code class="css">
+              ol li {
+              color: #A11E6E;
+              font: italic 15px serif;
+            }
+            </code>
+          </pre>
+          </ul>
+        </section>
+<!-- Comments -->
+<section>
+  <h3>CSS Comments</h3>
+  <p>Just like in HTML, we can use CSS comments to organize or "comment out" our code.</p>
+  <p><span class="pink">Example:</span></p>
+  <pre>
+    <code class="css">
+      /* Navigation */
+      nav ul li {
+        background-color: red;
+      }
+
+      /* Links */
+      a {
+        color: orange;
+      }
+
+      /*ol li a {
+        color: blue;
+      }*/
+
+    </code>
+  </pre>
+  </section>
+
+
+        <!-- Connecting HTML to CSS-->
+        <section>
+          <h3>Connecting CSS to HTML</h3>
+          <p class = "green">3 ways</p>
+          <p>"Inline"</p>
+          <p>"Embedded"</p>
+          <p>"External"</p>
+        </section>
+
+        <!-- Inline -->
+        <section>
+          <h3>Connecting CSS to HTML: Inline</h3>
+<pre><code class = "html">
+  &lt;p style="color:red;">Some text.&lt;/p>
+</code></pre>
+          <p>Uses the HTML attribute style.</p>
+          <p>Difficult to use in large projects</p>
+          <p>Not preferred.</p>
+        </section>
+
+        <!-- Embedded -->
+        <section>
+          <h3>Connecting CSS to HTML: Embedded</h3>
+<pre><code class = "html">
+&lt;head>
+  &lt;style type="text/css">
+    p {
+      color: blue;
+      font-size: 12px;
+    }
+  &lt;/style>
+&lt;/head>
+</code></pre>
+          <p>Inside &lt;head> element.</p>
+          <p>Uses &lt;style> tag.</p>
+          <p>Can only be used in one html file</p>
+        </section>
+
+        <!-- External-->
+        <section>
+          <h3>Connecting CSS to HTML: Linked</h3>
+<pre><code class = "html">
+&lt;head>
+  &lt;link rel="stylesheet" type="text/css" href="style.css">
+&lt;/head>
+</code></pre>
+          <p>Shared resource for several pages.</p>
+          <p>Reduced ﬁle size &amp; bandwidth</p>
+          <p>Easy to maintain in larger projects.</p>
+          <p>Preferred by nerds everywhere!</p>
+        </section>
+
+
+        <!-- Cascading-->
+        <section>
+          <h3>Cascading</h3>
+          <p>Styles "cascade" down until changed</p>
+<pre><code class = "html">
+p{
+  color:blue;
+  font-family: 'Helvetica';
+}
+p{
+  color:red;
+}
+p{
+  font-family: Arial;
+}
+</code></pre>
+<p class="fragment">Another way to think about it: bottom rules override top rules.</p>
+<p class="fragment">One more: the last thing you heard is what you'll remember.</p>
+
+ </section>
+
+
+
+
+        <!-- Properties-->
+        <section>
+          <h3>CSS Properties</h3>
+          <p>Many CSS properties have self-explanatory names:</p>
+          <ul>
+            <li>background-color</li>
+            <li>font-family</li>
+            <li>font-size</li>
+            <li>color</li>
+            <li>width</li>
+            <li>height</li>
+          </ul>
+          <p><a href = "http://w3schools.com/css/css_reference_atoz.asp">Comprehensive list of all CSS properties</a></p>
+        </section>
+
+
+<!-- What's wrong with my code / MOVE TO SECTION 2
+       <section>
+       <h3>What's wrong with my code?</h3>
+       <p>Why do you think this code isn't working?</p>
+        <div class="fragment">
+        <p class="red left-align">WRONG:</p>
+        <pre><code>
+#sidebar {
+   float: left
+   width: 200px
+   color: green
+}
+        </code></pre>
+        </div>
+        <div class="fragment">
+        <p class="green left-align">CORRECT:</p>
+        <pre><code>
+#sidebar {
+   float: left;
+   width: 200px;
+   color: green;
+}</code></pre>
+<p><small>Don't forget semi-colons after CSS properties.</small></p>
+        </div>
+       </section>
+       -->
+
+<section>
+       <h3>What's wrong with my code?</h3>
+       <p>Why do you think this code isn't working?</p>
+        <div class="fragment">
+        <p class="red left-align">WRONG:</p>
+        <pre><code>
+h1 {
+   color: green
+   font-face: serif
+}
+        </code></pre>
+        </div>
+        <div class="fragment">
+        <p class="green left-align">CORRECT:</p>
+        <pre><code>
+h1 {
+   color: green;
+   font-face: serif;
+}</code></pre>
+<p><small>Don't forget semi-colons after CSS properties.</small></p>
+        </div>
+       </section>
+
+              <section>
+       <h3>What's wrong with my code?</h3>
+       <p>Why do you think this code isn't working?</p>
+        <div class="fragment">
+        <p class="red left-align">WRONG:</p>
+        <pre><code>
+body {
+   color: grey;
+p {
+   font-size: 30px;
+     }
+}         </code></pre>
+        </div>
+        <div class="fragment">
+        <p class="green left-align">CORRECT:</p>
+        <pre><code>
+body {
+   color: grey;
+}
+p {
+   font-size: 30px;
+}</code></pre>
+<p><small>All CSS selectors and properties must be self contained. Selectors cannot be inside the { } of other selectors.</small></p>
+        </div>
+       </section>
+
+       <section>
+          <h3>Homework: Inspecting Element</h3>
+          <p>Let's right-click, "Inspect Element" &amp; look at some code!</p>
+          <br/>
+          <a href="http://alistapart.com" target="_blank"><img src="images/ala.png" alt="A List Apart homepage" target="_blank" height="350px"/></a>
+           <a href="http://tattly.com" target="_blank"><img src="images/tattly.png" alt="Tattly homepage" target="_blank" height="350px"/></a>
+        </section>
+
+        <section>
+          <h3>Homework for next class</h3>
+          <ul class="left">
+          <li>Find a favorite website (or two!), then view source &amp; inspect!</li>
+          <br/>
+          <li>Create a folder for the next class, name it <span class="blue">"html-site2"</span></li>
+          <li>Create <span class="blue">"html-site2/images"</span>, and put the following in it:
+          <ul>
+            <li>A profile picture of yourself (jpeg file)</li>
+            <li>2 to 3 other pictures for your website</li>
+          </ul>
+          <li>Find links to at least 3 favorite friends, blogs or websites</li>
+          <br/>
+          <li><span class="yellow">Bonus</span>: Write a paragraph to introduce yourself</li>
+          </ul>
+        </section>
+
+       <!-- Question-->
+        <section>
+          <h3>Questions?</h3>
+          <p>We're here to help!</p>
+          <img src="images/questions_cat.jpg" alt="Confused? Let us help!" />
+          <p>
+            <a href="mailto:leeann.drees@gmail.com">leeann.drees@gmail.com</a> Twitter: @leeanndrees</p>
+            <p><a href="mailto:detroit@girldevelopit.com">detroit@girldevelopit.com</a> Twitter: @gdiDet</p>
+        </section>
+
+				<section>
+          <h3>Next Up:</h3>
+          <p><a href="/session2.html">Session 2</a></p>
+          
+        </section>
+
+			</div>
+  		<footer>
+        <div class="copyright">
+          HTML/CSS &mdash; Girl Develop It &mdash;
+          <a rel="license" href="http://creativecommons.org/licenses/by-nc/3.0/deed.en_US"><img alt="Creative Commons License" style="border-width:0" src="http://i.creativecommons.org/l/by-nc/3.0/80x15.png" /></a>
+        </div>
+      </footer>
+		</div>
+
+
+		<script src="reveal/lib/js/head.min.js"></script>
+		<script src="reveal/js/reveal.min.js"></script>
+
+		<script>
+
+			// Full list of configuration options available here:
+			// https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+
+				theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+				transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/zoom/linear/none
+
+				// Optional libraries used to extend on reveal.js
+				dependencies: [
+					{ src: 'reveal/lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'reveal/plugin/markdown/showdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'reveal/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'reveal/plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'reveal/plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+					{ src: 'reveal/plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
+				]
+			});
+
+		</script>
+
+	</body>
+</html>
